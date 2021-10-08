@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="https://archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app204.us.archive.org';v.server_ms=900;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="bundle-playback.js?v=UfTkgsKx" charset="utf-8"></script>
+<script type="text/javascript" src="wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("https://stripe.com/","20111213031731","https://web.archive.org/","web","/_static/",
+	      "1323746251");
+</script>
+<link rel="stylesheet" type="text/css" href="banner-styles.css?v=omkqRugM" />
+<link rel="stylesheet" type="text/css" href="iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+    <meta charset="utf-8"/>
+
+    <meta name="description" content="Stripe makes it easy for developers to accept credit cards on the web."/>
+    <meta property="og:image" content="https://web.archive.org/web/20111213031731im_/https://stripe.com/img/frontpage/blueprints.png"/>
+
+    <title>Stripe</title>
+    <script type="text/javascript">
+        var _sf_startpt=(new Date()).getTime()
+        var APIValues = {};
+        
+            APIValues["curl"] = {};
+        
+                APIValues["curl"]["charge_create_with_card"] = "curl https://api.stripe.com/v1/charges \\\n   -u vtUQeOtUnYr7PGCLQ96Ul4zqpDUO4sOE: \\\n   -d amount=400 \\\n   -d currency=usd \\\n   -d &quot;description=Charge for site@stripe.com&quot; \\\n   -d &quot;card[number]=4242424242424242&quot; \\\n   -d &quot;card[exp_month]=12&quot; \\\n   -d &quot;card[exp_year]=2012&quot; \\\n   -d &quot;card[cvc]=123&quot;\n";
+        
+                APIValues["curl"]["charge_retrieve"] = "curl https://api.stripe.com/v1/charges/ch_YjKFjLIItzRDv7 \\\n   -u vtUQeOtUnYr7PGCLQ96Ul4zqpDUO4sOE:\n";
+        
+                APIValues["curl"]["charge_refund"] = "curl https://api.stripe.com/v1/charges/ch_YjKFjLIItzRDv7/refund \\\n   -u vtUQeOtUnYr7PGCLQ96Ul4zqpDUO4sOE: \\\n   -X POST\n";
+        
+                APIValues["curl"]["customer_create"] = "curl https://api.stripe.com/v1/customers \\\n   -u vtUQeOtUnYr7PGCLQ96Ul4zqpDUO4sOE: \\\n   -d &quot;description=Customer for site@stripe.com&quot; \\\n   -d &quot;card[number]=4242424242424242&quot; \\\n   -d &quot;card[exp_month]=12&quot; \\\n   -d &quot;card[exp_year]=2012&quot;\n";
+        
+                APIValues["curl"]["customer_delete"] = "curl https://api.stripe.com/v1/customers/cus_f3RFOaKklV4JGs \\\n   -u vtUQeOtUnYr7PGCLQ96Ul4zqpDUO4sOE: \\\n   -X DELETE\n";
+        
+                APIValues["curl"]["invoice_upcoming"] = "curl https://api.stripe.com/v1/invoices/upcoming?customer=cus_f3RFOaKklV4JGs \\\n   -u vtUQeOtUnYr7PGCLQ96Ul4zqpDUO4sOE:\n";
+        
+            APIValues["ruby"] = {};
+        
+                APIValues["ruby"]["charge_create_with_card"] = "<span class=\"CodeRay\">require <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">stripe</span><span class=\"dl\">&quot;</span></span>\n<span class=\"co\">Stripe</span>.api_key = <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">vtUQeOtUnYr7PGCLQ96Ul4zqpDUO4sOE</span><span class=\"dl\">&quot;</span></span>\n<span class=\"co\">Stripe</span>::<span class=\"co\">Charge</span>.create(\n  <span class=\"sy\">:amount</span> =&gt; <span class=\"i\">400</span>,\n  <span class=\"sy\">:currency</span> =&gt; <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">usd</span><span class=\"dl\">&quot;</span></span>,\n  <span class=\"sy\">:card</span> =&gt; {\n    <span class=\"sy\">:number</span> =&gt; <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">4242424242424242</span><span class=\"dl\">&quot;</span></span>,\n    <span class=\"sy\">:exp_month</span> =&gt; <span class=\"i\">12</span>,\n    <span class=\"sy\">:exp_year</span> =&gt; <span class=\"i\">2012</span>,\n    <span class=\"sy\">:cvc</span> =&gt; <span class=\"i\">314</span>\n  },\n  <span class=\"sy\">:description</span> =&gt; <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">Charge for site@stripe.com</span><span class=\"dl\">&quot;</span></span>\n)\n\n</span>";
+        
+                APIValues["ruby"]["charge_retrieve"] = "<span class=\"CodeRay\">require <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">stripe</span><span class=\"dl\">&quot;</span></span>\n<span class=\"co\">Stripe</span>.api_key = <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">vtUQeOtUnYr7PGCLQ96Ul4zqpDUO4sOE</span><span class=\"dl\">&quot;</span></span>\n<span class=\"co\">Stripe</span>::<span class=\"co\">Charge</span>.retrieve(<span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">ch_YjKFjLIItzRDv7</span><span class=\"dl\">&quot;</span></span>)\n\n</span>";
+        
+                APIValues["ruby"]["charge_refund"] = "<span class=\"CodeRay\">require <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">stripe</span><span class=\"dl\">&quot;</span></span>\n<span class=\"co\">Stripe</span>.api_key = <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">vtUQeOtUnYr7PGCLQ96Ul4zqpDUO4sOE</span><span class=\"dl\">&quot;</span></span>\nch = <span class=\"co\">Stripe</span>::<span class=\"co\">Charge</span>.retrieve(<span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">ch_YjKFjLIItzRDv7</span><span class=\"dl\">&quot;</span></span>)\nch.refund\n\n</span>";
+        
+                APIValues["ruby"]["customer_create"] = "<span class=\"CodeRay\">require <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">stripe</span><span class=\"dl\">&quot;</span></span>\n<span class=\"co\">Stripe</span>.api_key = <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">vtUQeOtUnYr7PGCLQ96Ul4zqpDUO4sOE</span><span class=\"dl\">&quot;</span></span>\n<span class=\"co\">Stripe</span>::<span class=\"co\">Customer</span>.create(\n  <span class=\"sy\">:description</span> =&gt; <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">Customer for </span><span class=\"dl\">&quot;</span></span>site<span class=\"iv\">@stripe</span>.com<span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"dl\">&quot;</span></span>,\n  <span class=\"sy\">:card</span> =&gt; <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">tok_q0rQhqe0QWva22</span><span class=\"dl\">&quot;</span></span> <span class=\"c\"># obtained with stripe.js</span>\n)\n\n</span>";
+        
+                APIValues["ruby"]["customer_delete"] = "<span class=\"CodeRay\">require <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">stripe</span><span class=\"dl\">&quot;</span></span>\n<span class=\"co\">Stripe</span>.api_key = <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">vtUQeOtUnYr7PGCLQ96Ul4zqpDUO4sOE</span><span class=\"dl\">&quot;</span></span>\ncu = <span class=\"co\">Stripe</span>::<span class=\"co\">Customer</span>.retrieve(<span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">cus_f3RFOaKklV4JGs</span><span class=\"dl\">&quot;</span></span>)\ncu.delete\n\n</span>";
+        
+                APIValues["ruby"]["invoice_upcoming"] = "<span class=\"CodeRay\">require <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">stripe</span><span class=\"dl\">&quot;</span></span>\n<span class=\"co\">Stripe</span>.api_key = <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">vtUQeOtUnYr7PGCLQ96Ul4zqpDUO4sOE</span><span class=\"dl\">&quot;</span></span>\n<span class=\"co\">Stripe</span>::<span class=\"co\">Invoice</span>.upcoming(<span class=\"sy\">:customer</span> =&gt; <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">cus_f3RFOaKklV4JGs</span><span class=\"dl\">&quot;</span></span>)\n\n</span>";
+        
+            APIValues["python"] = {};
+        
+                APIValues["python"]["charge_create_with_card"] = "<span class=\"CodeRay\"><span class=\"kw\">import</span> <span class=\"ic\">stripe</span>\nstripe.api_key = <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">vtUQeOtUnYr7PGCLQ96Ul4zqpDUO4sOE</span><span class=\"dl\">&quot;</span></span>\nstripe.Charge.create(\n  amount=<span class=\"i\">400</span>,\n  currency=<span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">usd</span><span class=\"dl\">&quot;</span></span>,\n  card={\n    <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">number</span><span class=\"dl\">&quot;</span></span>: <span class=\"s\"><span class=\"dl\">'</span><span class=\"k\">4242424242424242</span><span class=\"dl\">'</span></span>,\n    <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">exp_month</span><span class=\"dl\">&quot;</span></span>: <span class=\"s\"><span class=\"dl\">'</span><span class=\"k\">12</span><span class=\"dl\">'</span></span>,\n    <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">exp_year</span><span class=\"dl\">&quot;</span></span>: <span class=\"s\"><span class=\"dl\">'</span><span class=\"k\">2012</span><span class=\"dl\">'</span></span>,\n    <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">cvc</span><span class=\"dl\">&quot;</span></span>: <span class=\"s\"><span class=\"dl\">'</span><span class=\"k\">123</span><span class=\"dl\">'</span></span>\n  },\n  description=<span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">Charge for site@stripe.com</span><span class=\"dl\">&quot;</span></span>\n)\n\n</span>";
+        
+                APIValues["python"]["charge_retrieve"] = "<span class=\"CodeRay\"><span class=\"kw\">import</span> <span class=\"ic\">stripe</span>\nstripe.api_key = <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">vtUQeOtUnYr7PGCLQ96Ul4zqpDUO4sOE</span><span class=\"dl\">&quot;</span></span>\nstripe.Charge.retrieve(<span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">ch_YjKFjLIItzRDv7</span><span class=\"dl\">&quot;</span></span>)\n\n</span>";
+        
+                APIValues["python"]["charge_refund"] = "<span class=\"CodeRay\"><span class=\"kw\">import</span> <span class=\"ic\">stripe</span>\nstripe.api_key = <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">vtUQeOtUnYr7PGCLQ96Ul4zqpDUO4sOE</span><span class=\"dl\">&quot;</span></span>\nch = stripe.Charge.retrieve(<span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">ch_YjKFjLIItzRDv7</span><span class=\"dl\">&quot;</span></span>)\nch.refund()\n\n</span>";
+        
+                APIValues["python"]["customer_create"] = "<span class=\"CodeRay\"><span class=\"kw\">import</span> <span class=\"ic\">stripe</span>\nstripe.api_key = <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">vtUQeOtUnYr7PGCLQ96Ul4zqpDUO4sOE</span><span class=\"dl\">&quot;</span></span>\nstripe.Customer.create(\n  description=<span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">Customer for </span><span class=\"dl\">&quot;</span></span>site<span class=\"de\">@stripe.com</span><span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"dl\">&quot;</span></span>,\n  card=<span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">tok_q0rQhqe0QWva22</span><span class=\"dl\">&quot;</span></span> <span class=\"c\"># obtained with stripe.js</span>\n)\n\n</span>";
+        
+                APIValues["python"]["customer_delete"] = "<span class=\"CodeRay\"><span class=\"kw\">import</span> <span class=\"ic\">stripe</span>\nstripe.api_key = <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">vtUQeOtUnYr7PGCLQ96Ul4zqpDUO4sOE</span><span class=\"dl\">&quot;</span></span>\ncu = stripe.Customer.retrieve(<span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">cus_f3RFOaKklV4JGs</span><span class=\"dl\">&quot;</span></span>)\ncu.delete()\n\n</span>";
+        
+                APIValues["python"]["invoice_upcoming"] = "<span class=\"CodeRay\"><span class=\"kw\">import</span> <span class=\"ic\">stripe</span>\nstripe.api_key = <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">vtUQeOtUnYr7PGCLQ96Ul4zqpDUO4sOE</span><span class=\"dl\">&quot;</span></span>\nstripe.Invoice.upcoming(customer=<span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">cus_f3RFOaKklV4JGs</span><span class=\"dl\">&quot;</span></span>)\n\n</span>";
+        
+            APIValues["php"] = {};
+        
+                APIValues["php"]["charge_create_with_card"] = "<span class=\"CodeRay\"><span class=\"pd\">require_once</span>(<span class=\"s\"><span class=\"dl\">'</span><span class=\"k\">./lib/Stripe.php</span><span class=\"dl\">'</span></span>);\n<span class=\"co\">Stripe</span>::setApiKey(<span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">vtUQeOtUnYr7PGCLQ96Ul4zqpDUO4sOE</span><span class=\"dl\">&quot;</span></span>);\n<span class=\"co\">Stripe_Charge</span>::create(<span class=\"pd\">array</span>(\n  <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">amount</span><span class=\"dl\">&quot;</span></span> =&gt; <span class=\"i\">400</span>,\n  <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">currency</span><span class=\"dl\">&quot;</span></span> =&gt; <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">usd</span><span class=\"dl\">&quot;</span></span>,\n  <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">card</span><span class=\"dl\">&quot;</span></span> =&gt; <span class=\"pd\">array</span>(\n    <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">number</span><span class=\"dl\">&quot;</span></span> =&gt; <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">4242424242424242</span><span class=\"dl\">&quot;</span></span>,\n    <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">exp_month</span><span class=\"dl\">&quot;</span></span> =&gt; <span class=\"i\">12</span>,\n    <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">exp_year</span><span class=\"dl\">&quot;</span></span> =&gt; <span class=\"i\">2012</span>,\n    <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">cvc</span><span class=\"dl\">&quot;</span></span> =&gt; <span class=\"i\">314</span>\n  ),\n  <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">description</span><span class=\"dl\">&quot;</span></span> =&gt; <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">Charge for site@stripe.com</span><span class=\"dl\">&quot;</span></span>)\n);\n\n</span>";
+        
+                APIValues["php"]["charge_retrieve"] = "<span class=\"CodeRay\"><span class=\"pd\">require_once</span>(<span class=\"s\"><span class=\"dl\">'</span><span class=\"k\">./lib/Stripe.php</span><span class=\"dl\">'</span></span>);\n<span class=\"co\">Stripe</span>::setApiKey(<span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">vtUQeOtUnYr7PGCLQ96Ul4zqpDUO4sOE</span><span class=\"dl\">&quot;</span></span>);\n<span class=\"co\">Stripe_Charge</span>::retrieve(<span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">ch_YjKFjLIItzRDv7</span><span class=\"dl\">&quot;</span></span>);\n\n</span>";
+        
+                APIValues["php"]["charge_refund"] = "<span class=\"CodeRay\"><span class=\"pd\">require_once</span>(<span class=\"s\"><span class=\"dl\">'</span><span class=\"k\">./lib/Stripe.php</span><span class=\"dl\">'</span></span>);\n<span class=\"co\">Stripe</span>::setApiKey(<span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">vtUQeOtUnYr7PGCLQ96Ul4zqpDUO4sOE</span><span class=\"dl\">&quot;</span></span>);\n<span class=\"lv\">$ch</span> = <span class=\"co\">Stripe_Charge</span>::retrieve(<span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">ch_YjKFjLIItzRDv7</span><span class=\"dl\">&quot;</span></span>);\n<span class=\"lv\">$ch</span>-&gt;refund();\n\n</span>";
+        
+                APIValues["php"]["customer_create"] = "<span class=\"CodeRay\"><span class=\"pd\">require_once</span>(<span class=\"s\"><span class=\"dl\">'</span><span class=\"k\">./lib/Stripe.php</span><span class=\"dl\">'</span></span>);\n<span class=\"co\">Stripe</span>::setApiKey(<span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">vtUQeOtUnYr7PGCLQ96Ul4zqpDUO4sOE</span><span class=\"dl\">&quot;</span></span>);\n<span class=\"co\">Stripe_Customer</span>::create(<span class=\"pd\">array</span>(\n  <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">description</span><span class=\"dl\">&quot;</span></span> =&gt; <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">Customer for </span><span class=\"dl\">&quot;</span></span>site<span class=\"ex\">@</span>stripe.com<span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"dl\">&quot;</span></span>,\n  <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">card</span><span class=\"dl\">&quot;</span></span> =&gt; <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">tok_q0rQhqe0QWva22</span><span class=\"dl\">&quot;</span></span> <span class=\"c\">// obtained with stripe.js</span>\n));\n\n</span>";
+        
+                APIValues["php"]["customer_delete"] = "<span class=\"CodeRay\"><span class=\"pd\">require_once</span>(<span class=\"s\"><span class=\"dl\">'</span><span class=\"k\">./lib/Stripe.php</span><span class=\"dl\">'</span></span>);\n<span class=\"co\">Stripe</span>::setApiKey(<span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">vtUQeOtUnYr7PGCLQ96Ul4zqpDUO4sOE</span><span class=\"dl\">&quot;</span></span>);\n<span class=\"lv\">$cu</span> = <span class=\"co\">Stripe_Customer</span>::retrieve(<span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">cus_f3RFOaKklV4JGs</span><span class=\"dl\">&quot;</span></span>);\n<span class=\"lv\">$cu</span>-&gt;<span class=\"pd\">delete</span>();\n\n</span>";
+        
+                APIValues["php"]["invoice_upcoming"] = "<span class=\"CodeRay\"><span class=\"pd\">require_once</span>(<span class=\"s\"><span class=\"dl\">'</span><span class=\"k\">./lib/Stripe.php</span><span class=\"dl\">'</span></span>);\n<span class=\"co\">Stripe</span>::setApiKey(<span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">vtUQeOtUnYr7PGCLQ96Ul4zqpDUO4sOE</span><span class=\"dl\">&quot;</span></span>);\n<span class=\"co\">Stripe_Invoice</span>::upcoming(<span class=\"pd\">array</span>(<span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">customer</span><span class=\"dl\">&quot;</span></span> =&gt; <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">cus_f3RFOaKklV4JGs</span><span class=\"dl\">&quot;</span></span>));\n\n</span>";
+        
+            APIValues["java"] = {};
+        
+                APIValues["java"]["charge_create_with_card"] = "<span class=\"CodeRay\">Stripe.apiKey = <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">vtUQeOtUnYr7PGCLQ96Ul4zqpDUO4sOE</span><span class=\"dl\">&quot;</span></span>;\n<span class=\"pt\">Map</span>&lt;<span class=\"pt\">String</span>, <span class=\"pt\">Object</span>&gt; chargeParams = <span class=\"kw\">new</span> <span class=\"pt\">HashMap</span>&lt;<span class=\"pt\">String</span>, <span class=\"pt\">Object</span>&gt;();\nchargeParams.put(<span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">amount</span><span class=\"dl\">&quot;</span></span>, <span class=\"i\">400</span>);\n<span class=\"pt\">Map</span>&lt;<span class=\"pt\">String</span>, <span class=\"pt\">Object</span>&gt; cardParams = <span class=\"kw\">new</span> <span class=\"pt\">HashMap</span>&lt;<span class=\"pt\">String</span>, <span class=\"pt\">Object</span>&gt;();\ncardParams.put(<span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">number</span><span class=\"dl\">&quot;</span></span>, <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">4242424242424242</span><span class=\"dl\">&quot;</span></span>);\ncardParams.put(<span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">exp_month</span><span class=\"dl\">&quot;</span></span>, <span class=\"i\">12</span>);\ncardParams.put(<span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">exp_year</span><span class=\"dl\">&quot;</span></span>, <span class=\"i\">2012</span>);\ncardParams.put(<span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">cvc</span><span class=\"dl\">&quot;</span></span>, <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">314</span><span class=\"dl\">&quot;</span></span>);\nchargeParams.put(<span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">card</span><span class=\"dl\">&quot;</span></span>, cardParams);\nchargeParams.put(<span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">description</span><span class=\"dl\">&quot;</span></span>, <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">Charge for site@stripe.com</span><span class=\"dl\">&quot;</span></span>);\nchargeParams.put(<span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">currency</span><span class=\"dl\">&quot;</span></span>, <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">usd</span><span class=\"dl\">&quot;</span></span>);\nCharge.create(chargeParams);\n</span>";
+        
+                APIValues["java"]["charge_retrieve"] = "<span class=\"CodeRay\">Stripe.apiKey = <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">vtUQeOtUnYr7PGCLQ96Ul4zqpDUO4sOE</span><span class=\"dl\">&quot;</span></span>;\nCharge.retrieve(<span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">ch_YjKFjLIItzRDv7</span><span class=\"dl\">&quot;</span></span>);\n\n</span>";
+        
+                APIValues["java"]["charge_refund"] = "<span class=\"CodeRay\">Stripe.apiKey = <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">vtUQeOtUnYr7PGCLQ96Ul4zqpDUO4sOE</span><span class=\"dl\">&quot;</span></span>;\nch = Charge.retrieve(<span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">ch_YjKFjLIItzRDv7</span><span class=\"dl\">&quot;</span></span>);\nch.refund();\n\n</span>";
+        
+                APIValues["java"]["customer_create"] = "<span class=\"CodeRay\">Stripe.apiKey = <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">vtUQeOtUnYr7PGCLQ96Ul4zqpDUO4sOE</span><span class=\"dl\">&quot;</span></span>;\n<span class=\"pt\">Map</span>&lt;<span class=\"pt\">String</span>, <span class=\"pt\">Object</span>&gt; customerParams = <span class=\"kw\">new</span> <span class=\"pt\">HashMap</span>&lt;<span class=\"pt\">String</span>, <span class=\"pt\">Object</span>&gt;();\ncustomerParams.put(<span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">card</span><span class=\"dl\">&quot;</span></span>, <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">tok_q0rQhqe0QWva22</span><span class=\"dl\">&quot;</span></span>); <span class=\"c\">// obtained with stripe.js</span>\ncustomerParams.put(<span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">description</span><span class=\"dl\">&quot;</span></span>, Customer <span class=\"kw\">for</span> <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">site@stripe.com</span><span class=\"dl\">&quot;</span></span>);\nCustomer.create(customerParams);\n</span>";
+        
+                APIValues["java"]["customer_delete"] = "<span class=\"CodeRay\">Stripe.apiKey = <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">vtUQeOtUnYr7PGCLQ96Ul4zqpDUO4sOE</span><span class=\"dl\">&quot;</span></span>;\nCustomer cu = Customer.retrieve(<span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">cus_f3RFOaKklV4JGs</span><span class=\"dl\">&quot;</span></span>);\ncu.delete();\n\n</span>";
+        
+                APIValues["java"]["invoice_upcoming"] = "<span class=\"CodeRay\">Stripe.apiKey = <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">vtUQeOtUnYr7PGCLQ96Ul4zqpDUO4sOE</span><span class=\"dl\">&quot;</span></span>;\n<span class=\"pt\">Map</span>&lt;<span class=\"pt\">String</span>, <span class=\"pt\">Object</span>&gt; invoiceParams = <span class=\"kw\">new</span> <span class=\"pt\">HashMap</span>&lt;<span class=\"pt\">String</span>, <span class=\"pt\">Object</span>&gt;();\ninvoiceParams.put(<span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">customer</span><span class=\"dl\">&quot;</span></span>, <span class=\"s\"><span class=\"dl\">&quot;</span><span class=\"k\">cus_f3RFOaKklV4JGs</span><span class=\"dl\">&quot;</span></span>);\nInvoice.upcoming(invoiceParams);\n</span>";
+        
+        </script>
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="shared.css" media="screen"/>
+
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="jquery.easing.js"></script>
+    <!--<script type="text/javascript" src="/javascripts/animate-enhanced.jquery.js"></script>-->
+    <script type="text/javascript" src="fancylabel.jquery.js"></script>
+    <script type="text/javascript" src="shared.js"></script>
+    <script type="text/javascript" src="frontpage.js"></script>
+
+    <link rel="image_src" type="image/png" href="https://web.archive.org/web/20111213031731im_/https://stripe.com/img/logo.png"/>
+</head>
+<body>
+
+    <div id="background"></div>
+
+    <div id="header">
+        <h1><a href="index.html">Stripe</a></h1>
+
+        <div class="navigation">
+            <div class="signin"><a id="signin" href="https://web.archive.org/web/20111213031731/https://manage.stripe.com/login"><span>Sign In</span></a></div>
+            <ul class="global">
+                
+                <li><a href="https://web.archive.org/web/20111213031731/https://stripe.com/api">Documentation</a></li>
+                <li><a href="https://web.archive.org/web/20111213031731/https://stripe.com/help">Help &amp; Support</a></li>
+            </ul>
+
+        </div>
+    </div> <!-- END HEADER -->
+
+    <div id="frontpage" class="box">
+
+        <div id="switcher-content"><div class="inner">
+            <div id="accept-payments" class="part">
+                <h1>Payments for developers</h1>
+                <h2>Stripe makes it easy to start accepting<br/> credit cards on the web today.</h2>
+                <a href="https://web.archive.org/web/20111213031731/https://stripe.com/signup" class="button blue"><span>Get Started with Stripe</span></a>
+
+                <img src="blueprints.png" class="illustration" width="445" height="341"/>
+            </div>
+
+        </div></div><!-- END SWITCHER CONTENT -->
+
+    </div>
+
+
+    <div id="more-info" class="box">
+
+        <div id="info">
+
+        <h1><span>Why you'll love Stripe</span></h1>
+
+            <div class="part first fullstack">
+                <div class="title">
+                    <h2>Full-stack payments</h2>
+                    <p>You don't need a merchant account or gateway. Stripe handles everything, including storing cards, subscriptions, and direct payouts to your bank account.</p>
+                    <p>To make it all happen, we work closely with some of the best financial institutions in the world.</p>
+                </div>
+
+                <img src="api-cloud.png" width="406" height="210"/>
+            </div>
+
+            <div class="part custom odd"><div class="inner">
+                <div class="title">
+                    <h2>Skip the sensitive stuff</h2>
+                    <p>Stripe.js lets you build your own payment forms while still avoiding most PCI requirements.</p>
+                    <p>Credit cards go directly to Stripe's secure environment, and never hit your servers. <a href="https://web.archive.org/web/20111213031731/https://stripe.com/docs/stripe.js" class="arrow">Learn more</a></p>
+                </div>
+
+                <img src="forms.png" width="383" height="202"/>
+            </div></div>
+
+            <div class="part first api">
+                <div class="title">
+                    <h2>An API that gets out of your way</h2>
+                    <p>It's so easy, we've embedded a bunch of examples right here. Copy some of these requests into your terminal and check out what happens.</p>
+                    <p>With wrappers in Ruby, PHP, Python and more, you can get started in minutes. <a href="https://web.archive.org/web/20111213031731/https://stripe.com/docs" class="arrow">Learn more</a></p>
+                </div>
+
+                <div id="example-code"><pre class="curl">curl http://127.0.0.1:15003/v1/charges \
+  -u XPCMusIxXsQyHfk2RQ9QKOCMukRF1k8V: \
+  -d amount=400 \
+  -d currency=usd \
+  -d "card[number]=4242424242424242" \
+  -d "card[exp_month]=6" \
+  -d "card[exp_year]=2012" \
+  -d "description=Charge for site@stripe.com"</pre>
+
+                <div id="example-controls">
+                  <select name="action">
+                        <option value="charge_create_with_card">Create a new charge</option>
+                        <option value="charge_retrieve">Retrieve a charge</option>
+                        <option value="charge_refund">Refund a charge</option>
+                        <option value="customer_create">Create a new customer</option>
+                        <option value="customer_delete">Delete a customer</option>
+                        <option value="invoice_upcoming">Retrieve an invoice</option>
+                    </select>
+                    <span>using</span>
+                    <select name="lang">
+                        <option value="curl">curl</option>
+                        <option value="ruby">ruby</option>
+                        <option value="python">python</option>
+                        <option value="php">php</option>
+                        <option value="java">java</option>
+                    </select>
+              </div>
+
+  </div>
+
+            </div>
+
+            <div class="part pricing odd"><div class="inner">
+                <div class="title">
+                    <h2>Pricing like it should be</h2>
+                    <p>2.9% + 30 cents per successful charge. No setup fees, no monthly fees, no card storage fees, no hidden costs: you only get charged when you earn money.</p>
+                    <p>Earnings are transferred to your bank account on a 7 day rolling basis. <a href="https://web.archive.org/web/20111213031731/https://stripe.com/help/pricing" class="arrow">Pricing details</a></p>
+                </div>
+
+                <img src="checks.png" width="426" height="206"/>
+            </div></div>
+
+            <div class="part developers">
+                <div class="title">
+                    <h2>We're developers too</h2>
+                    <p>Our team is full of developers and entrepreneurs who have been there and seen the problems in this industry&nbsp;firsthand.</p>
+                    <p>We're dedicated to building the best and simplest payment solution for developers. <a href="https://web.archive.org/web/20111213031731/https://stripe.com/about" class="arrow">Meet the team</a></p>
+                </div>
+
+                <img src="stripe-photo.png" width="406" height="239"/>
+            </div>
+        </div>
+
+        <div id="get-started">
+            <p>Start accepting payments instantly. <a href="https://web.archive.org/web/20111213031731/https://stripe.com/signup" class="button blue medium rounded"><span>Get Started with Stripe</span></a></p>
+        </div>
+
+    </div> <!-- END FRONTPAGE -->
+
+<div id="footer">
+    <ul>
+        <li><a href="https://web.archive.org/web/20111213031731/https://stripe.com/terms">Legal</a></li>
+        <li><a href="https://web.archive.org/web/20111213031731/https://stripe.com/about">About</a></li>
+        <!-- <li><a href="/blog">Blog</a></li> -->
+        <li><a href="https://web.archive.org/web/20111213031731/https://stripe.com/jobs"><span>Jobs</span></a></li>
+        <li class="last"><a href="https://web.archive.org/web/20111213031731/http://twitter.com/stripe">@stripe</a></li>
+    </ul>
+    <p>&copy; Stripe, Inc.</p>
+</div>
+<!-- Ganalytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12675062-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://web.archive.org/web/20111213031731/https://ssl' : 'https://web.archive.org/web/20111213031731/http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Mixpanel -->
+<script type="text/javascript">var mpq=[];mpq.push(["init","b7b5e4272923f82307951ea44a1481b2"]);(function(){var a=document.createElement("script");a.type="text/javascript";a.async=true;a.src=(document.location.protocol==="https:"?"https:":"http:")+"//web.archive.org/web/20111213031731/https://api.mixpanel.com/site_media/js/api/mixpanel.js";var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)})();</script>
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 03:17:31 Dec 13, 2011 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 05:40:37 Oct 08, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 759.032
+  exclusion.robots: 0.119
+  exclusion.robots.policy: 0.11
+  RedisCDXSource: 1.718
+  esindex: 0.011
+  LoadShardBlock: 142.331 (3)
+  PetaboxLoader3.datanode: 72.63 (4)
+  CDXLines.iter: 78.336 (3)
+  load_resource: 89.449
+  PetaboxLoader3.resolve: 57.733
+-->
