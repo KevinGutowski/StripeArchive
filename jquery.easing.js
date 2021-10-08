@@ -219,7 +219,7 @@ jQuery.extend( jQuery.easing,
 }
 /*
      FILE ARCHIVED ON 03:21:41 Nov 22, 2011 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 05:24:10 Oct 08, 2021.
+     INTERNET ARCHIVE ON 05:40:39 Oct 08, 2021.
      JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
 
      ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
@@ -227,14 +227,14 @@ jQuery.extend( jQuery.easing,
 */
 /*
 playback timings (ms):
-  captures_list: 198.224
-  exclusion.robots: 0.17
-  exclusion.robots.policy: 0.158
-  RedisCDXSource: 8.992
-  esindex: 0.013
-  LoadShardBlock: 167.531 (3)
-  PetaboxLoader3.datanode: 73.388 (4)
-  CDXLines.iter: 18.046 (3)
-  load_resource: 78.758
-  PetaboxLoader3.resolve: 32.883
+  captures_list: 106.14
+  exclusion.robots: 0.1
+  exclusion.robots.policy: 0.09
+  RedisCDXSource: 2.606
+  esindex: 0.008
+  LoadShardBlock: 80.487 (3)
+  PetaboxLoader3.datanode: 72.132 (4)
+  CDXLines.iter: 19.707 (3)
+  load_resource: 45.155
+  PetaboxLoader3.resolve: 23.452
 */

@@ -17,7 +17,7 @@ iframe { position: absolute; }
 
 
 /* Global */
-html { background: #d9dfe4 url(../../../../20111122032124im_/https:/stripe.com/img/background.png); font-family: "HelveticaNeue", Helvetica, Arial, sans-serif; height: 100%; }
+html { background: #d9dfe4 url(background.png); font-family: "HelveticaNeue", Helvetica, Arial, sans-serif; height: 100%; }
 body { min-height: 100%;
        background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.5)), to(rgba(255,255,255,0.0)));
        /*background-attachment: fixed;
@@ -37,7 +37,7 @@ div#header { height: 108px; position: relative; }
 
     div#header h1 { text-indent: -999em; float: left; margin-top: 39px; width: 72px; height: 31px;
                     -wexbkit-backface-visibility: hidden; }
-        div#header h1 a { background: url(../../../../20111122032124im_/https:/stripe.com/img/logo.png) no-repeat; display: block; height: 31px;
+        div#header h1 a { background: url(logo.png) no-repeat; display: block; height: 31px;
                           -webkit-transzition: opacity 300ms ease-in-out;
                           }
             div#header h1 a:hover { opacity: 0.75; }
@@ -105,7 +105,7 @@ div#header { height: 108px; position: relative; }
         div#header div.account-dropdown-view a.account { font-size: 11px; line-height: 16px; color: #555; position: relative; z-index: 145;
                                            display: block; padding: 11px 0 0 14px; height: 28px; width: 121px; cursor: default;
                                            margin: -11px 0 -0 -10px; text-shadow: 0 1px 0 rgba(255,255,255,0.5);
-                                           text-decoration: none; background: url(../../../../20111122032124im_/https:/stripe.com/img/merch/header/arrow.png) 116px 17px no-repeat;
+                                           text-decoration: none; background: url(arrow.png) 116px 17px no-repeat;
 
                                            -webkit-border-radius: 6px;
                                            -moz-border-radius: 6px; }
@@ -177,11 +177,11 @@ div.box { position: relative;
           -webkit-border-radius: 4px;
           -moz-border-radius: 4px; }
     div.box-shadow { position: absolute; width: 940px; left: -3px; width: 946px; z-index: -1; }
-        div.box-shadow.top { top: -2px; height: 9px; background: url(../../../../20111122032124im_/https:/stripe.com/img/box-shadow/top.png); }
-        div.box-shadow.center { top: 7px; bottom: 6px; background: url(../../../../20111122032124im_/https:/stripe.com/img/box-shadow/center.png); }
-        div.box-shadow.bottom { bottom: -4px; height: 10px; background: url(../../../../20111122032124im_/https:/stripe.com/img/box-shadow/bottom.png); }
+        div.box-shadow.top { top: -2px; height: 9px; background: url(top.png); }
+        div.box-shadow.center { top: 7px; bottom: 6px; background: url(center.png); }
+        div.box-shadow.bottom { bottom: -4px; height: 10px; background: url(bottom.png); }
 
-    div.box-content { background: url(../../../../20111122032124im_/https:/stripe.com/img/box-shadow/center.png); padding-left: 3px; left: -3px; position: relative; }
+    div.box-content { background: url(center.png); padding-left: 3px; left: -3px; position: relative; }
 
     /* CSS box shadow */
     div.box.css { -webkit-box-shadow: 0px 1px 4px rgba(0,0,0,0.29); }
@@ -516,7 +516,7 @@ div.grid {  }
 
 
 /* Anchor with arrow image */
-a.arrow { background: url(../../../../20111122032124im_/https:/stripe.com/img/anchor-arrow.png) 100% 1px no-repeat; padding-right: 18px; }
+a.arrow { background: url(anchor-arrow.png) 100% 1px no-repeat; padding-right: 18px; }
     a.arrow:hover { background-position: 100% -19px; }
 
 /* Center column for elements */
@@ -577,7 +577,7 @@ div#frontpage { background: #fff; }
 
     /* Switcher */
     div#switcher-content { height: 297px; overflow: hidden; position: relative;
-                           background: #233042 url(../../../../20111122032124im_/https:/stripe.com/img/frontpage/switcher-background.png);
+                           background: #233042 url(switcher-background.png);
 
                            -webkit-border-radius: 4px;
                            -moz-border-radius: 4px; }
@@ -596,7 +596,7 @@ div#frontpage { background: #fff; }
 
 
         div#accept-payments { }
-            div#accept-payments h1 { background-image: url(../../../../20111122032124im_/https:/stripe.com/img/frontpage/titles/title.png); }
+            div#accept-payments h1 { background-image: url(title.png); }
             div#accept-payments img.illustration { top: -16px; left: 521px; }
 
         div#analytics { left: 960px; }
@@ -631,17 +631,17 @@ div#frontpage { background: #fff; }
     /* Info (api examples, about us) */
     div#info { /*background: url(/web/20111122032124im_/https://stripe.com/img/frontpage/gradient-divider.png) no-repeat;*/ }
 
-        div#info h1 { margin: 0 60px; background: url(../../../../20111122032124im_/https:/stripe.com/img/frontpage/types.png) 100% 52px no-repeat; height: 19px;
+        div#info h1 { margin: 0 60px; background: url(types.png) 100% 52px no-repeat; height: 19px;
                       border-bottom: 1px solid #ebebeb; padding: 50px 0 29px; }
 
             div#info h1 span { position: relative; top: -5px; text-indent: -999em; font-size: 24px; height: 28px; display: block; width: 400px;
-                               background: url(../../../../20111122032124im_/https:/stripe.com/img/frontpage/titles/content.png) 0 5px no-repeat; }
+                               background: url(content.png) 0 5px no-repeat; }
 
         div#info div.part { padding: 45px 0; margin: 0 60px;  position: relative; }
             div#info div.part div.title { background-repeat: no-repeat; background-position: 50% 0; }
 
             div#info div.part h2 { font-size: 20px; color: #313131; text-indent: -999em; height: 20px; margin-top: 2px;
-                                   background: url(../../../../20111122032124im_/https:/stripe.com/img/frontpage/titles/section_titles.png) no-repeat; }
+                                   background: url(section_titles.png) no-repeat; }
             div#info div.part div.title p { font-size: 14px; line-height: 20px; margin-bottom: 10px; color: #777;
                                             width: 360px; margin-top: 10px; }
 
@@ -716,11 +716,11 @@ div#frontpage { background: #fff; }
 
 div#about { background: #fff; }
 
-    div#about div.title { margin: 0 60px; background: url(../../../../20111122032124im_/https:/stripe.com/img/about/titles/about_us.png) 0 60px no-repeat; height: 200px; }
+    div#about div.title { margin: 0 60px; background: url(about_us.png) 0 60px no-repeat; height: 200px; }
         div#about h1,
         div#about div.title p { display: none; }
 
-    div#about div#team { background: #af7c4a url(../../../../20111122032124im_/https:/stripe.com/img/about/cork.png); height: 253px;
+    div#about div#team { background: #af7c4a url(cork.png); height: 253px;
                          padding: 40px; /*overflow: hidden;*/ }
 
         div#about div#team a { margin-left: 20px; width: 100px; height: 150px; text-decoration: none;
@@ -729,7 +729,7 @@ div#about { background: #fff; }
                                -webkit-transition: all 200ms ease-in-out; }
         div#about div#team span.frame { width: 108px; height: 108px; position: absolute;
                                         top: -1px; left: -4px; z-index: 30;
-                                        background: url(../../../../20111122032124im_/https:/stripe.com/img/about/frame.png); pointer-events: none; }
+                                        background: url(frame.png); pointer-events: none; }
         div#about div#team img { margin-bottom: 4px; position: relative; z-index: 20;
                                  -webkit-transition: all 200ms ease-in-out; }
 
@@ -753,7 +753,7 @@ div#about { background: #fff; }
             div#about div#team span.bio em { display: block; font-weight: bold; margin-bottom: 7px;
                                              font-size: 12px; color: #fff; }
 
-            div#about div#team span.bio span.arrow { width: 22px; height: 16px; display: block; background: url(../../../../20111122032124im_/https:/stripe.com/img/about/popover_arrow.png) no-repeat;
+            div#about div#team span.bio span.arrow { width: 22px; height: 16px; display: block; background: url(popover_arrow.png) no-repeat;
                                                      position: absolute;
                                                      bottom: -16px; left: 50%;  margin-left: -11px }
 
@@ -777,7 +777,7 @@ div#about { background: #fff; }
 
 
     div#about div#additional { margin: 60px 60px 40px; }
-        div#about div#additional h2 { text-indent: -999em; background: url(../../../../20111122032124im_/https:/stripe.com/img/about/titles/secondary.png) no-repeat;
+        div#about div#additional h2 { text-indent: -999em; background: url(secondary.png) no-repeat;
                                       height: 22px; margin-bottom: 15px; }
 
         div#about div#additional p { color: #777; font-size: 13px; line-height: 18px; margin-bottom: 18px; }
@@ -792,7 +792,7 @@ div#jobs { background: #fff; }
 
     div#jobs div.content { padding: 0 60px 40px; padding-right: 340px; }
 
-    div#jobs div.title { margin: 0 60px 40px; background: url(../../../../20111122032124im_/https:/stripe.com/img/jobs/title.png) 0 60px no-repeat; height: 370px;
+    div#jobs div.title { margin: 0 60px 40px; background: url(title.png.1) 0 60px no-repeat; height: 370px;
                          border-bottom: 1px solid #ebebeb; }
         div#jobs div.title h1,
         div#jobs div.title p { display: none; }
@@ -873,7 +873,7 @@ div#documentation div#content { background: #fff; border-left: 1px solid #cfcfcf
 
 /* =============== BLOG SPECIFIC ============ */
 
-div.blog-post { background: #f6f6f6 url(../../../../20111122032124im_/https:/stripe.com/img/blog/grid.png) -1px -1px; }
+div.blog-post { background: #f6f6f6 url(grid.png) -1px -1px; }
     div.blog-post div.meta { position: absolute; width: 150px; padding: 40px;
                               font-size: 11px; }
         div.blog-post div.meta img { float: left; margin-right: 11px; }
@@ -933,7 +933,7 @@ div.blog-post { background: #f6f6f6 url(../../../../20111122032124im_/https:/str
 
 /*
      FILE ARCHIVED ON 03:21:24 Nov 22, 2011 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 05:24:09 Oct 08, 2021.
+     INTERNET ARCHIVE ON 05:40:38 Oct 08, 2021.
      JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
 
      ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
@@ -941,14 +941,14 @@ div.blog-post { background: #f6f6f6 url(../../../../20111122032124im_/https:/str
 */
 /*
 playback timings (ms):
-  captures_list: 99.062
-  exclusion.robots: 0.134
-  exclusion.robots.policy: 0.123
-  RedisCDXSource: 0.644
-  esindex: 0.012
-  LoadShardBlock: 75.083 (3)
-  PetaboxLoader3.datanode: 52.746 (4)
-  CDXLines.iter: 20.616 (3)
-  load_resource: 57.309
-  PetaboxLoader3.resolve: 38.483
+  RedisCDXSource: 29.285
+  load_resource: 59.683
+  exclusion.robots: 0.546
+  CDXLines.iter: 27.472 (3)
+  LoadShardBlock: 130.861 (3)
+  PetaboxLoader3.datanode: 81.365 (4)
+  PetaboxLoader3.resolve: 73.498 (2)
+  captures_list: 194.252
+  exclusion.robots.policy: 0.523
+  esindex: 0.029
 */

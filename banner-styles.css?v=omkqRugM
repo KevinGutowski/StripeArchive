@@ -437,7 +437,7 @@ html.wb-highlight {
 }
 
 .wm-icon-screen-shot {
-  background: url("../images/web-screenshot.svg") no-repeat !important;
+  background: url("web-screenshot.svg") no-repeat !important;
   background-size: contain !important;
   width: 22px !important;
   height: 19px !important;

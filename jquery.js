@@ -32,7 +32,7 @@ b[0]&&b[0].ownerDocument||c);var h=[],i;for(var j=0,k;(k=a[j])!=null;j++){typeof
 }
 /*
      FILE ARCHIVED ON 03:21:32 Nov 22, 2011 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 05:24:10 Oct 08, 2021.
+     INTERNET ARCHIVE ON 05:40:39 Oct 08, 2021.
      JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
 
      ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
@@ -40,14 +40,14 @@ b[0]&&b[0].ownerDocument||c);var h=[],i;for(var j=0,k;(k=a[j])!=null;j++){typeof
 */
 /*
 playback timings (ms):
-  captures_list: 450.471
-  exclusion.robots: 0.139
-  exclusion.robots.policy: 0.13
-  RedisCDXSource: 5.343
-  esindex: 0.009
-  LoadShardBlock: 417.345 (3)
-  PetaboxLoader3.datanode: 417.856 (4)
-  CDXLines.iter: 19.612 (3)
-  load_resource: 52.541
-  PetaboxLoader3.resolve: 33.755
+  captures_list: 121.227
+  exclusion.robots: 0.135
+  exclusion.robots.policy: 0.125
+  RedisCDXSource: 25.894
+  esindex: 0.01
+  LoadShardBlock: 69.379 (3)
+  PetaboxLoader3.datanode: 112.016 (4)
+  CDXLines.iter: 21.512 (3)
+  load_resource: 102.066
+  PetaboxLoader3.resolve: 31.844
 */
